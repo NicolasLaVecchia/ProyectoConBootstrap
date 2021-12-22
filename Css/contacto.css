@@ -1,640 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=PT+Sans:ital@1&family=Roboto:wght@300&display=swap');
+/* 
+    font-family: 'Cormorant Garamond', serif;
+
+    font-family: 'PT Sans', sans-serif;
+
+    font-family: 'Roboto', sans-serif;
+*/
+
+/* reseteo */
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
+/* reseteo */
 
+/* desplazamiento onepage*/
 html{
     scroll-behavior: smooth;
 }
+/* desplazamiento onepage*/
 
 body{
-    height: 100vh;
-    width: 100%;
-    background: linear-gradient(to bottom, whitesmoke, rgba(245, 245, 245, 0.3), rgba(245, 245, 245, 0.3), whitesmoke),
-    url("../Images/fondo-contacto.jpg");
+    background-color: rgba(0, 0, 0, 0.822);
+}
+
+/* INICIO HEADER */
+/* inicio navbar */
+.navbar{
+    background-color: #ffb2a4 !important;
+    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.5);
+}
+.navbar-brand img{
+    transition: 300ms;    
+}
+.navbar-brand img:hover{
+    transform: scale(0.9);    
+}
+
+.navbar-toggler{
+    background-color: whitesmoke;
+}
+.nav-item{
+    margin-right: 2rem;
+}
+.nav-link{
+    color:black !important;
+    transition: 600ms;
+}
+.nav-link:hover{
+    color:#f5f5f5 !important;
+}
+.nav-link i{
+    transition: 600ms
+}
+.nav-link i:hover{
+    transform: rotate(360deg);
+}
+/* fin navbar */
+
+/* inicio navredes */
+.redes .nav-item{
+    background-color: #ffb2a4;
+    transition: 500ms;
+}
+.redes .nav-item:hover{
+    transform: translateY(0.3rem);
+}
+/* fin navredes */
+/* FIN HEADER */
+
+/* INICIO MAIN */
+.main{
+    width: auto;
+    height: auto;
+}
+
+/* inicio jumbotron */
+.jumbotron{
+    background: linear-gradient(to top, rgb(0, 0, 0), rgba(245, 245, 245, 0.2), rgba(245, 245, 245, 0.1), whitesmoke),
+        url("../Images/fondo-contacto.jpg");
     background-size: cover;
     background-position: center;
-    display: grid;
-    grid-template-areas: "header"
-    "main"
-    "footer";
+    margin: 0;
+    margin-top: 10vh;
+    border-radius: 0;
+    color: whitesmoke;
 }
-
-/*INICIO MEDIA 360px*/
-@media only screen and (min-width:360px) and (max-width:480px){
-    body{
-        height: 200vh;
-        width: 100%;
-        background-color: whitesmoke;
-        display: grid;
-        grid-template-areas: "header"
-        "main"
-        "footer";
-    }
-    
-    /*INICIO HEADER*/
-    .header{
-        grid-area: header;
-        width: 100%;
-        height: 100vh;
-        display: grid;
-        grid-template-areas: "banner . ."
-        ". nav ."
-        ". nav ."
-        ". nav ."
-        ". nav ."
-        ". nav ."
-        "busqueda busqueda busqueda";
-        grid-template-columns: 0.5fr 2fr 0.5fr;
-        grid-template-rows: 0.2fr 2fr 1fr 1fr 1fr 1fr 1fr;
-    }
-
-    /*inicio navegador total*/
-    .total{
-        grid-area: nav;
-        width: 100%;
-        height: 100%;
-        display: grid;
-        grid-template-areas: "nav2"
-        "nav1"
-        "nav1"
-        "nav3"
-        "nav3";
-    }
-
-    /*inicio navegador2*/
-    .nav2{
-        grid-area: nav2;
-        width: 100%;
-        height: 100%;
-    }
-    .nav2 #home{
-        height: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    .nav2 #home img{
-        width: 100%;
-        height: 100%;
-        transition: 300ms;
-    }
-    .nav2 #home img:hover{
-            transform: scale(0.8);
-    }
-    /*fin navegador2*/
-    
-    /*inicio navegador1*/
-    .nav1{
-        grid-area: nav1;  
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .nav1 ul{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .nav1 ul li{
-        padding: 0.5rem;
-        text-align: center;
-        list-style: none;
-        padding: 1rem;
-    }
-    .nav1 ul li a{
-        color: white;
-        text-decoration: none;
-        font-family: 'Outfit', sans-serif;
-        font-size: 3vmax;
-        font-weight: bold;
-        background-color: rgb(0, 0, 0, 0.2);
-        padding: 0.5rem;
-        border-radius: 0.5rem;
-        transition: 500ms;
-    }
-    .nav1 ul li a:hover{
-        color: rgb(255, 178, 164);
-        background-color: black;
-    }
-    .nav1 ul li a i{
-        font-size: 3vmax;
-        padding: 1vmax;
-        transition: 600ms;
-    }
-    .nav1 ul li a i:hover{
-        transform: rotate(360deg);
-    }
-    /*fin navegador1*/
-    
-    /*inicio navegador3*/
-    .nav3{
-        grid-area: nav3;
-        width: 100%;
-        height: 100%;
-    }
-    .nav3 ul{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    .nav3 ul li{
-        padding: 0.5rem;
-        text-align: center;
-        list-style: none;
-        padding: 1rem;
-    }
-    .nav3 ul li a{
-        color: white;
-        text-decoration: none;
-        font-family: 'Outfit', sans-serif;
-        font-size: 3vmax;
-        font-weight: bold;
-        background-color: rgb(0, 0, 0, 0.2);
-        padding: 0.5rem;
-        border-radius: 0.5rem;
-        transition: 500ms;
-    }
-    .nav3 ul li a:hover{
-        color: rgb(255, 178, 164);
-        background-color: black;
-    }
-    .nav3 ul li a i{
-        font-size: 3vmax;
-        padding: 1vmax;
-        transition: 600ms;
-    }
-    .nav3 ul li a i:hover{
-        transform: rotate(360deg);
-    }
-    .nav3 #contact{
-        background-color: black;
-        color: rgb(255, 178, 164);
-    }
-    /*fin navegador3*/
-    /*fin navegador total*/
-    
-    /*inicio redes*/
-    .redes{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: space-around;
-        text-align: center;
-        position:fixed;
-        top: 89.5vh;
-        z-index: 3;
-        background-color: rgb(255, 178, 164);
-    }
-    /*whatsapp*/
-    .redes .whatsapp{
-        width: 100%;
-        height: 100%;
-        background-color:#00bb2d;
-        transition: 500ms;
-    }
-    .redes .whatsapp:hover{
-        transform: translateY(0.5rem);
-        background-color: black;
-    }
-    .redes .whatsapp i{
-        font-style: none;
-        color: whitesmoke;
-        line-height: 10.5vh;
-        font-size: 3vmax;
-        transition: 500ms;
-    }
-    .redes .whatsapp i:hover{
-        color:rgb(255, 178, 164);
-    }
-    /*whatsapp*/
-    /*hotmail*/
-    .redes .hotmail{
-        width: 100%;
-        height: 100%;
-        background-color: #db4a39;
-        transition: 500ms;
-    }
-    .redes .hotmail:hover{
-        transform: translateY(0.5rem);
-        background-color: black;
-    }
-    .redes .hotmail i{
-        font-style: none;
-        color: whitesmoke;
-        font-size: 3vmax;
-        line-height: 10.5vh;
-        transition: 500ms;
-    }
-    .redes .hotmail i:hover{
-        color:rgb(255, 178, 164);
-    }
-    /*hotmail*/
-    /*instagram*/
-    .redes .instagram{
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        background-color: #3f729b;
-        transition: 500ms;
-    }
-    .redes .instagram:hover{
-        transform: translateY(0.5rem);
-        background-color: black;
-    }
-    .redes .instagram i{
-        font-style: none;
-        color: whitesmoke;
-        font-size: 3vmax;
-        line-height: 10.5vh;
-        transition: 500ms;
-    }
-    .redes .instagram i:hover{
-        color:rgb(255, 178, 164);
-    }
-    /*instagram*/
-    /*cults*/
-    .redes .cults{
-        width: 100%;
-        height: 100%;
-        background-color: #822ef5;
-        transition: 500ms;
-    }
-    .redes .cults:hover{
-        transform: translateY(0.5rem);
-        background-color: black;
-    }
-    .redes .cults i{
-        font-style: none;
-        color: whitesmoke;
-        font-size: 3vmax;
-        line-height: 10.5vh;
-        transition: 500ms;
-    }
-    .redes .cults i:hover{
-        color:rgb(255, 178, 164);
-    }
-    /*cults*/
-    /*fin redes*/
-    /*FIN HEADER*/
-
-    /*INICIO MAIN*/
-    .menu{
-        grid-area: main;
-        width: 100%;
-        height: 70vh;
-    }
-    .menu .contenido{
-        width: 100%;
-        height: 100%;
-    }
-    /*CIERRO MAIN*/
-
-    /*INICIO FOOTER*/
-    .footer{
-        grid-area: footer;
-        width: 100%;
-        height: 30vh;
-        display: flex;
-        margin-top: 5vh;
-        background-color: rgb(0, 0, 0, 0.5);
-        background: linear-gradient(to left, rgb(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
-    }
-    .footer .section1{
-        width: 75%;
-        height: 100%;
-        text-align: center;
-        order: 2;
-        justify-content: center;
-    }
-    .footer .section1 p{
-        width: 100%;
-        height: 100%;
-        font-family: 'Playfair Display', serif;
-        font-size: 2.5vmax;
-        font-style: italic;
-        color: whitesmoke;
-        padding: 1.2rem 2rem 0rem 1rem;
-    }
-
-    .footer .section2{
-        width: 25%;
-        height: auto;
-        order: 1;
-        text-align: center;
-        padding-top: 1rem;
-        font-size: 3vmax;
-    }
-    .footer .section2 a{
-        width: 100%;
-        height: auto;
-        color: black;
-    }
-    .footer .section2 a img{
-        width: 100%;
-        height: auto;
-        transition: 500ms;
-    }
-    .footer .section2 a img:hover{
-        transform: scale(0.9);
-    }
-    /*FIN FOOTER*/
+.jumbotron h1{
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5%;
+    text-shadow: 2px 2px 2px black;
 }
-/*FIN MEDIA 360px*/
+/* fin jumbotron */
 
-/*INICIO  MEDIA 1200px*/
-@media only screen and (min-width:1200px){
-    /*INICIO HEADER*/
-    .header{
-        grid-area: header;
-        width: 100%;
-        height: 10.5vh;
-        display: grid;
-        grid-template-areas: "nav nav nav";
-    }
-
-    /*inicio navegador total*/
-    .total{
-        grid-area: nav;
-        width: 100%;
-        height: 10.5vh;
-        background: linear-gradient(rgb(255, 178, 164), rgb(255, 178, 164));
-        position: fixed;
-        z-index: 4;
-        box-shadow: rgb(0, 0, 0, 0.5) 0px 20px 5vmax;
-        display: grid;
-        grid-template-areas: "nav1 nav2 nav3";
-    }
-
-    /*inicio navegador1*/
-    .nav1{
-        grid-area: nav1;
-        width: 100%;
-        height: 10.5vh;
-    }
-    .nav1 ul{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .nav1 ul li{
-        text-align: center;
-        list-style: none;
-        display: inline-block;
-    }
-    .nav1 ul li a{
-        color: white;
-        text-decoration: none;
-        font-family: 'Outfit', sans-serif;
-        font-size: 1.2vmax;
-        font-weight: bold;
-        line-height: 10.5vh;
-    }
-    .nav1 ul li a:hover{
-        color: black;
-    }
-    .nav1 ul li a i{
-        font-size: 1.5vmax;
-        padding: 1vmax;
-        transition: 600ms;
-    }
-    .nav1 ul li a i:hover{
-        transform: rotate(360deg);
-    } 
-    /*fin navegador1*/
-
-    /*inicio navegador2*/
-    .nav2{
-        grid-area: nav2;
-        width: 100%;
-        height: 10.5vh;
-    }
-    .nav2 #home{
-        display: flex;
-        justify-content: center;
-    }
-    .nav2 #home img{
-        width: 50%;
-        height: 10vh;
-        transition: 300ms;
-    }
-    .nav2 #home img:hover{
-        transform: scale(0.8);
-    }
-    /*fin navegador2*/
-
-    /*inicio navegador3*/
-    .nav3{
-        width: 100%;
-        height: 10.5vh;
-        grid-area: nav3;
-    }
-    .nav3 ul{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .nav3 ul li{
-        text-align: center;
-        list-style: none;
-        display: inline-block;
-    }
-    .nav3 ul li a{
-        color: white;
-        text-decoration: none;
-        font-family: 'Outfit', sans-serif;
-        font-size: 1.2vmax;
-        font-weight: bold;
-        line-height: 10.5vh;
-    }
-    .nav3 ul li a:hover{
-        color: black;
-    }
-    .nav3 ul li a i{
-        font-size: 1.5vmax;
-        padding: 1vmax;
-        transition: 600ms;
-    }
-    .nav3 ul li a i:hover{
-        transform: rotate(360deg);
-    }
-    .nav3 ul li #contact{
-        color: black;
-        transition: 500ms;
-    }
-    .nav3 ul li #contact:hover{
-        color: white;
-    }
-    /*fin navegador3*/
-    /*fin navegador total*/
-
-    /*inicio redes*/
-    .redes{
-        grid-area: redes;
-        width: 20vw;
-        height: 10.5vh;
-        display: flex;
-        justify-content: space-around;
-        text-align: center;
-        position:fixed;
-        top: 89.5vh;
-        z-index: 3;
-        background-color: rgb(255, 178, 164);
-    }
-    /*whatsapp*/
-    .redes .whatsapp{
-        width: 100%;
-        height: 100%;
-        background-color:#00bb2d;
-        transition: 500ms;
-    }
-    .redes .whatsapp:hover{
-        transform: translateY(0.5rem);
-        background-color: black;
-    }
-    .redes .whatsapp i{
-        font-style: none;
-        color: whitesmoke;
-        line-height: 10.5vh;
-        font-size: 3vmax;
-        transition: 500ms;
-    }
-    .redes .whatsapp i:hover{
-        color:rgb(255, 178, 164);
-    }
-    /*whatsapp*/
-    /*hotmail*/
-    .redes .hotmail{
-        width: 100%;
-        height: 100%;
-        background-color: #db4a39;
-        transition: 500ms;
-    }
-    .redes .hotmail:hover{
-        transform: translateY(0.5rem);
-        background-color: black;
-    }
-    .redes .hotmail i{
-        font-style: none;
-        color: whitesmoke;
-        font-size: 3vmax;
-        line-height: 10.5vh;
-        transition: 500ms;
-    }
-    .redes .hotmail i:hover{
-        color:rgb(255, 178, 164);
-    }
-    /*hotmail*/
-    /*instagram*/
-    .redes .instagram{
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-        background-color: #3f729b;
-        transition: 500ms;
-    }
-    .redes .instagram:hover{
-        transform: translateY(0.5rem);
-        background-color: black;
-    }
-    .redes .instagram i{
-        font-style: none;
-        color: whitesmoke;
-        font-size: 3vmax;
-        line-height: 10.5vh;
-        transition: 500ms;
-    }
-    .redes .instagram i:hover{
-        color:rgb(255, 178, 164);
-    }
-    /*instagram*/
-    /*cults*/
-    .redes .cults{
-        width: 100%;
-        height: 100%;
-        background-color: #822ef5;
-        transition: 500ms;
-    }
-    .redes .cults:hover{
-        transform: translateY(0.5rem);
-        background-color: black;
-    }
-    .redes .cults i{
-        font-style: none;
-        color: whitesmoke;
-        font-size: 3vmax;
-        line-height: 10.5vh;
-        transition: 500ms;
-    }
-    .redes .cults i:hover{
-        color:rgb(255, 178, 164);
-    }
-    /*cults*/
-    /*fin redes*/
-    /*FIN HEADER*/
-
-    /*INICIO MAIN*/
-    .menu{
-        grid-area: main;
-        width: 100%;
-        height: 79vh;
-    }
-    .menu .contenido{
-        width: 100%;
-        height: 100%;
-    }
-    /*CIERRO MAIN*/
-
-
-    /*INICIO FOOTER*/
-    .footer{
-        grid-area: footer;
-        width: 100%;
-        height: 10.5vh;
-        display: flex;
-    }
-
-    .footer .section1{
-        width: 75%;
-        height: auto;
-        background-color: black;
-        text-align: center;
-    }
-    .footer .section1 p{
-        text-align: center;
-        font-family: 'Playfair Display', serif;
-        font-size: 1vmax;
-        margin-left: 19rem;
-        font-style: italic;
-        color: whitesmoke;
-        line-height: 10.5vh;
-    }
-
-    .footer .section2{
-        width: 25%;
-        height: auto;
-    }
-    .footer .section2 a{
-        width: 100%;
-        height: auto;
-        margin-left: 3rem;
-        margin-right: 0.5rem;
-        color: black;
-    }
-    .footer .section2 a img{
-        width: 50%;
-        height: auto;
-        transition: 500ms;
-    }
-    .footer .section2 a img:hover{
-        transform: translateX(-1rem);
-    }
-    /*FIN FOOTER*/
+.contenido{
+    color: whitesmoke;
 }
-/*FIN  MEDIA 1200px*/
+/* fin MAIN */
+
+/* inicio footer */
+.footer{
+    width: auto;
+    height: auto;
+}
+.footer p{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1vmax;
+    font-style: italic;
+    color: whitesmoke;
+}
+.footer a{
+    width: 100%;
+    height: auto;
+    color: whitesmoke;
+}
+.footer a img{
+    transition: 500ms;
+}
+.footer a img:hover{
+    transform: translateX(-1rem);
+}
+/* fin footer */
+
