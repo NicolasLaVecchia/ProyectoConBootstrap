@@ -213,7 +213,7 @@ body{
 }
 /* fin servicios */
 
-/* inicio servicios */
+/* inicio empresa */
 #empresa .n-left{
     width: auto;
     height: auto;
@@ -251,7 +251,7 @@ body{
 #carousel3{
     margin-top: 10vh
 }
-/* fin servicios */
+/* fin empresa */
 
 /*seccion btn danger*/
 .btn{
