@@ -91,6 +91,7 @@ body{
     font-family: 'Roboto', sans-serif;
     margin-bottom: 5%;
     text-shadow: 2px 2px 2px black;
+    font-size: 3vmax;
 }
 /* fin jumbotron */
 

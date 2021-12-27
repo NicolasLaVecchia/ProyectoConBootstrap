@@ -91,19 +91,75 @@ body{
     font-family: 'Roboto', sans-serif;
     margin-bottom: 5%;
     text-shadow: 2px 2px 2px black;
+    font-size: 4vmax;
 }
 .jumbotron h2{
     font-family: 'Roboto', sans-serif;
     margin-bottom: 5%;
     text-shadow: 2px 2px 2px black;
+    font-size: 3vmax;
 }
 .jumbotron p{
     font-family: 'PT Sans', sans-serif;
     text-shadow: 2px 2px 2px black;
     font-style: oblique; 
-    font-size: 2rem;
+    font-size: 2vmax;
 }
 /* fin jumbotron */
+
+/* inicio card */
+.card{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+}
+.card-img-top{
+    width: 50%;
+}
+.card-header{
+    color: whitesmoke;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-size: 4vmax;
+}
+.card-title{
+    color: whitesmoke;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+    animation: titulo1 infinite 5s;
+}
+.card-text{
+    color: whitesmoke;
+    font-family: 'Cormorant Garamond', serif;
+}
+.card-text span{
+    color: goldenrod;
+}
+.btn-light{
+    transition: 500ms;
+}
+.btn-light:hover{
+    background-color: goldenrod;
+    color: whitesmoke;
+    transform: scale(1.1);
+}
+/* fin card */
+
+@keyframes titulo1{
+    0%{
+        opacity: 0;
+        color: whitesmoke;
+    }
+    50%{
+        opacity: 1;
+        color: gold;
+    }
+    100%{
+        opacity: 0;
+        color: whitesmoke;
+    }
+}
 
 /* FIN MAIN */
 

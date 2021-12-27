@@ -122,7 +122,7 @@ body{
 }
 #portfolio .p-left h1{
     font-family: 'Roboto', sans-serif;
-    font-size: 5rem;
+    font-size: 4vmax;
     font-weight: bold;
     font-style: oblique;
     transition: 500ms;
@@ -143,12 +143,23 @@ body{
     font-family: 'Cormorant Garamond', serif;
     color: whitesmoke;
     font-weight: bold;
-    transition: 500ms;
-}
-#portfolio .p-left p span:hover{
-    color:steelblue
+    animation: span1 infinite 5s;
 }
 
+@keyframes span1{
+    0%{
+        opacity: 1;
+        color: whitesmoke;
+    }
+    50%{
+        opacity: 1;
+        color: steelblue;
+    }
+    100%{
+        opacity: 1;
+        color: whitesmoke;
+    }
+}
 
 #portfolio .p-right{
     width: auto;
@@ -170,7 +181,7 @@ body{
 }
 #servicios .s-left h1{
     font-family: 'Roboto', sans-serif;
-    font-size: 4rem;
+    font-size: 4vmax;
     font-weight: bold;
     font-style: oblique;
     transition: 500ms;
@@ -198,7 +209,7 @@ body{
 #carousel2 h5{
     text-shadow: 0 0 2px black;
     font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
+    font-size: 2vmax;
 }
 /* fin servicios */
 
@@ -209,7 +220,7 @@ body{
 }
 #empresa .n-left h1{
     font-family: 'Roboto', sans-serif;
-    font-size: 4rem;
+    font-size: 4vmax;
     font-weight: bold;
     font-style: oblique;
     transition: 500ms;
@@ -242,13 +253,23 @@ body{
 }
 /* fin servicios */
 
+/*seccion btn danger*/
+.btn-danger{
+    transition: 800ms;
+}
+.btn-danger:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+/*seccion btn danger*/
+
 /* seccion hr */
 .hr{
     background-color: whitesmoke;
 }
 /* seccion hr */
 
-/* inicio main */
+/* fin main */
 
 /* inicio footer */
 .footer{

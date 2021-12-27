@@ -79,7 +79,7 @@ body{
 /* inicio jumbotron */
 .jumbotron{
     background: linear-gradient(to top, rgb(0, 0, 0), rgba(245, 245, 245, 0.2), rgba(245, 245, 245, 0.1), whitesmoke),
-        url("../Images/Marketing-de-Servicios-1.png");
+        url("../Images/servicesfondo.jpg");
     background-size: cover;
     background-position: center;
     margin: 0;
@@ -91,6 +91,7 @@ body{
     font-family: 'Roboto', sans-serif;
     margin-bottom: 5%;
     text-shadow: 2px 2px 2px black;
+    font-size: 4vmax;
 }
 .jumbotron h2{
     font-family: 'Roboto', sans-serif;
@@ -101,14 +102,14 @@ body{
     font-family: 'PT Sans', sans-serif;
     text-shadow: 2px 2px 2px black;
     font-style: oblique; 
-    font-size: 2rem;
+    font-size: 2vmax;
 }
 /* fin jumbotron */
 
 /* inicio carrousel */
 .left1 h1{
     font-family: 'PT Sans', sans-serif;
-    font-size: 4rem;
+    font-size: 4vmax;
     font-weight: bold;
     font-style: oblique;
     transition: 500ms;
@@ -125,7 +126,7 @@ body{
 .carousel-caption h5{
     font-family: 'PT Sans', sans-serif;
     text-shadow: 0 0 3px black;
-    font-size: 2rem;
+    font-size: 2vmax;
     color: white;
 }
 /* fin carrousel */
@@ -155,6 +156,7 @@ body{
     transform: translateX(-1rem);
 }
 /* fin footer */
+
 /* 
     font-family: 'Cormorant Garamond', serif;
 

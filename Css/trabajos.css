@@ -91,6 +91,7 @@ body{
     font-family: 'Roboto', sans-serif;
     margin-bottom: 5%;
     text-shadow: 2px 2px 2px black;
+    font-size: 4vmax;
 }
 .jumbotron h2{
     font-family: 'Roboto', sans-serif;
@@ -101,7 +102,7 @@ body{
     font-family: 'PT Sans', sans-serif;
     text-shadow: 2px 2px 2px black;
     font-style: oblique; 
-    font-size: 2rem;
+    font-size: 2vmax;
 }
 .jumbotron p a{
     transition: 500ms;
@@ -117,14 +118,18 @@ body{
 /* inicio cards */
 .card{
     background-color: transparent;
+    text-align: center;
+}
+.card-img-top{
     transition: 900ms;
 }
-.card:hover{
+.card-img-top:hover{
     transform: scale(0.8);
 }
 .card-title{
     color: whitesmoke;
     font-family: 'PT Sans', sans-serif;
+    transition: 900ms;
 }
 .card-title:hover{
     color: gold;
