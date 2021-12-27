@@ -254,6 +254,12 @@ body{
 /* fin servicios */
 
 /*seccion btn danger*/
+.btn{
+    transition: 500ms;
+}
+.btn:hover{
+    transform: scale(0.8);
+}
 .btn-danger{
     transition: 800ms;
 }

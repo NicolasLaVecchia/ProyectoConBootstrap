@@ -95,9 +95,41 @@ body{
 }
 /* fin jumbotron */
 
+/* inicio form */
 .contenido{
     color: whitesmoke;
 }
+.texto1{
+    font-size: 3vmax;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.texto2{
+    font-size: 2.5vmax;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    transition: 500ms;
+}
+.texto2:hover{
+    color: goldenrod;
+}
+.textoLabel{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2vmax;
+    text-decoration: underline goldenrod;
+}
+.textoLabel .fas, .textoLabel .far{
+    color: goldenrod;
+    transition: 800ms;
+}
+.textoLabel .fas:hover, .textoLabel .far:hover{
+    transform: rotate(360deg);
+}
+.form-control:hover{
+    box-shadow: 0 0 10px goldenrod !important;
+}
+/* fin form */
 /* fin MAIN */
 
 /* inicio footer */

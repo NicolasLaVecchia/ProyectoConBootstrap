@@ -99,36 +99,35 @@
         <!-- inicio form -->
         <div class="contenido">
             <form action="mailto:nicolaslavecchia@hotmail.com" method="post" enctype="text/plain">
-                <h3>NECESITAS QUE TE AYUDEMOS?</h3>
-                <ul>
-                    <h3>Contactanos</h3>
-                    <li>
-                        <label for="name">Apellido y Nombre:</label>
-                        <input type="text" id="name" name="user_name" required placeholder="Ej: Ruiz, Carlos">
-                    </li>
-                    <li>
-                        <label for="profesion">A que te dedicas:</label>
-                        <input type="text" id="profesion" name="user_profesion" placeholder="tu profesion">
-                    </li>
-                    <li>
-                        <label for="mail">Correo electrónico:</label>
-                        <input type="email" id="mail" name="user_mail" required placeholder="Ej: ruizcarlos@gmail.com">
-                    </li>
-                    <li>
-                        <label for="celular">Tu telefono de contacto:</label>
-                        <input type="text" id="celular" name="user_celular" required placeholder="Pone tu caracteristica">
-                    </li>
-                    <li>
-                        <label for="msg">Contanos tu interes</label>
-                        <textarea id="msg" name="user_message" cols="30" rows="5" placeholder="Ej: Necesito presupuesto para un proyecto."></textarea>
-                    </li>
-                    <li>
-                        <label for="archivo">Adjunte referencia:</label>
-                        <input type="file" id="archivo" name="user_archivo">
-                    </li>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Borrar Todo">
-                </ul>           
+                <h3 class="texto1 text-center">NECESITAS QUE TE AYUDEMOS?</h3>
+                
+                <h3 class="texto2 text-center">Completa el formulario</h3>
+                <div class="form-group">
+                    <label class="textoLabel" for="name"> <i class="far fa-id-card"></i> Apellido y Nombre:</label>
+                    <input class="form-control" type="text" id="name" name="user_name" required placeholder="Ej: Ruiz, Carlos">
+                </div>
+                <div class="form-group">
+                    <label class="textoLabel" for="profesion"> <i class="fas fa-user-tie"></i> A que te dedicas:</label>
+                    <input class="form-control" type="text" id="profesion" name="user_profesion" placeholder="Ej: arquitecto, comerciante, etc">
+                </div>
+                <div class="form-group">
+                    <label class="textoLabel" for="mail"> <i class="fas fa-mail-bulk"></i> Correo electrónico:</label>
+                    <input class="form-control" type="email" id="mail" name="user_mail" required placeholder="Ej: ruizcarlos@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label class="textoLabel" for="celular"> <i class="fas fa-phone-alt"></i> Tu telefono de contacto:</label>
+                    <input class="form-control" type="text" id="celular" name="user_celular" required placeholder="No olvides la caracteristica">
+                </div>
+                <div class="form-group">
+                    <label class="textoLabel" for="msg"> <i class="fas fa-lightbulb"></i> Contanos tu interes:</label>
+                    <textarea class="form-control" id="msg" name="user_message" cols="30" rows="5" placeholder="Ej: Necesito presupuesto para un proyecto."></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="textoLabel" for="archivo"> <i class="fas fa-cloud-upload-alt"></i> Adjunte su referencia:</label>
+                    <input class="form-control" type="file" id="archivo" name="user_archivo">
+                </div>
+                <input class="btn btn-success" type="submit" value="Enviar">
+                <input class="btn btn-danger" type="reset" value="Borrar Todo">
             </form>
         </div>
         <!-- fin form -->

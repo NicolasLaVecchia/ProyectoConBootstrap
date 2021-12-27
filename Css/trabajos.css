@@ -136,6 +136,20 @@ body{
 }
 /* fin cards */
 
+/* inicio boton mas*/
+.more{
+    width: 100%;
+    margin: 1rem;
+}
+.more i{
+    color: whitesmoke;
+    font-size: 3vmax;
+    transition: 800ms;
+}
+.more i:hover{
+    transform: rotate(360deg);
+    text-shadow: 0 0 5px red;
+}
 /* fin main */
 
 /* inicio footer */
